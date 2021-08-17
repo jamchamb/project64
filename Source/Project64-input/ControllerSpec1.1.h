@@ -25,6 +25,7 @@ enum
     PLUGIN_RUMBLE_PAK = 3,
     PLUGIN_TRANSFER_PAK = 4,
     PLUGIN_RAW = 5,
+	PLUGIN_SNAPSTATION = 6,
 };
 
 // Structures

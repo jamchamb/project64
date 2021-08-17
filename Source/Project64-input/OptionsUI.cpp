@@ -48,6 +48,12 @@ public:
         {
             ControllerPak.SetCurSel(Index);
         }
+		Index = ControllerPak.AddString(L"Snap Station");
+		ControllerPak.SetItemData(Index, PLUGIN_SNAPSTATION);
+		if (m_ControlInfo.Plugin == PLUGIN_SNAPSTATION)
+		{
+			ControllerPak.SetCurSel(Index);
+		}
         return TRUE;
     }
 

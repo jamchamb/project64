@@ -926,6 +926,7 @@ bool CN64System::SetActiveSystem(bool bActive)
         g_TLB = &m_TLB;
         g_Reg = &m_Reg;
         g_Mempak = &m_Mempak;
+		g_SnapStation = &m_SnapStation;
         g_Audio = &m_Audio;
         g_SystemTimer = &m_SystemTimer;
         g_TransVaddr = &m_MMU_VM;

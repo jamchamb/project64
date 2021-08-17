@@ -22,6 +22,7 @@ uint32_t * g_TLBStoreAddress = nullptr;
 CDebugger * g_Debugger = nullptr;
 uint8_t ** g_RecompPos = nullptr;
 CMempak * g_Mempak = nullptr;
+Snapstation * g_SnapStation = nullptr;
 CRandom * g_Random = nullptr;
 CEnhancements * g_Enhancements = nullptr;
 

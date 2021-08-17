@@ -65,6 +65,7 @@
     <ClCompile Include="N64System\Mips\PifRam.cpp" />
     <ClCompile Include="N64System\Mips\Register.cpp" />
     <ClCompile Include="N64System\Mips\Rumblepak.cpp" />
+    <ClCompile Include="N64System\Mips\Snapstation.cpp" />
     <ClCompile Include="N64System\Mips\Sram.cpp" />
     <ClCompile Include="N64System\Mips\SystemEvents.cpp" />
     <ClCompile Include="N64System\Mips\SystemTiming.cpp" />
@@ -161,6 +162,7 @@
     <ClInclude Include="N64System\Mips\PifRam.h" />
     <ClInclude Include="N64System\Mips\Register.h" />
     <ClInclude Include="N64System\Mips\Rumblepak.h" />
+    <ClInclude Include="N64System\Mips\Snapstation.h" />
     <ClInclude Include="N64System\Mips\Sram.h" />
     <ClInclude Include="N64System\Mips\SystemEvents.h" />
     <ClInclude Include="N64System\Mips\SystemTiming.h" />

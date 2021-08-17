@@ -11,6 +11,7 @@
 #include <Project64-core/N64System/Mips/SystemEvents.h>
 #include <Project64-core/N64System/Mips/SystemTiming.h>
 #include <Project64-core/N64System/Mips/Mempak.h>
+#include <Project64-core/N64System/Mips/Snapstation.h>
 #include <Project64-core/Settings/DebugSettings.h>
 #include <Project64-core/Plugin.h>
 #include <Project64-core/Logging.h>
@@ -134,6 +135,7 @@ private:
     CTLB            m_TLB;
     CRegisters      m_Reg;
     CMempak         m_Mempak;
+	Snapstation     m_SnapStation;
     CFramePerSecond m_FPS;
     CProfiling      m_CPU_Usage; // Used to track the CPU usage
     CRecompiler   * m_Recomp;

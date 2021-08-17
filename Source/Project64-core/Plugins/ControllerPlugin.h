@@ -58,6 +58,7 @@ enum PluginType
     PLUGIN_RUMBLE_PAK = 3,
     PLUGIN_TANSFER_PAK = 4, // Not implemented for non-raw data
     PLUGIN_RAW = 5, // The controller plugin is passed in raw data
+	PLUGIN_SNAPSTATION = 6,
 };
 
 class CControl_Plugin;

@@ -351,6 +351,9 @@
     <ClCompile Include="N64System\N64Rom.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="N64System\Mips\Snapstation.cpp">
+      <Filter>Source Files\N64 System\Mips</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -667,6 +670,9 @@
     </ClInclude>
     <ClInclude Include="N64System\Enhancement\EnhancementList.h">
       <Filter>Header Files\N64 System\Enhancement</Filter>
+    </ClInclude>
+    <ClInclude Include="N64System\Mips\Snapstation.h">
+      <Filter>Source Files\N64 System\Mips</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

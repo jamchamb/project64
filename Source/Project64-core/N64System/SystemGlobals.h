@@ -54,6 +54,9 @@ extern uint8_t ** g_RecompPos;
 class CMempak;
 extern CMempak * g_Mempak;
 
+class Snapstation;
+extern Snapstation * g_SnapStation;
+
 class CRandom;
 extern CRandom * g_Random;
 

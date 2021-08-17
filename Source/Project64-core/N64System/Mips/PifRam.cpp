@@ -10,6 +10,7 @@
 #include <Project64-core/N64System/Mips/Transferpak.h>
 #include <Project64-core/N64System/Mips/Rumblepak.h>
 #include <Project64-core/N64System/Mips/Mempak.h>
+#include <Project64-core/N64System/Mips/Snapstation.h>
 #include <Project64-core/Logging.h>
 
 CPifRam::CPifRam(bool SavesReadOnly) :
@@ -463,6 +464,7 @@ void CPifRam::ProcessControllerCommand(int32_t Control, uint8_t * Command)
             case PLUGIN_RUMBLE_PAK:
             case PLUGIN_MEMPAK:
             case PLUGIN_RAW:
+			case PLUGIN_SNAPSTATION:
                 Command[5] = 1; break;
             default: Command[5] = 0; break;
             }
@@ -508,6 +510,7 @@ void CPifRam::ProcessControllerCommand(int32_t Control, uint8_t * Command)
             case PLUGIN_MEMPAK: g_Mempak->ReadFrom(Control, address, data); break;
             case PLUGIN_TANSFER_PAK: Transferpak::ReadFrom((uint16_t)address, data); break;
             case PLUGIN_RAW: if (g_Plugins->Control()->ControllerCommand) { g_Plugins->Control()->ControllerCommand(Control, Command); } break;
+			case PLUGIN_SNAPSTATION: g_SnapStation->ReadFrom((uint16_t) address, data); break;
             default:
                 memset(&Command[5], 0, 0x20);
             }
@@ -549,6 +552,7 @@ void CPifRam::ProcessControllerCommand(int32_t Control, uint8_t * Command)
             case PLUGIN_RUMBLE_PAK: Rumblepak::WriteTo(Control, address, data); break;
             case PLUGIN_TANSFER_PAK: Transferpak::WriteTo((uint16_t)address, data); break;
             case PLUGIN_RAW: if (g_Plugins->Control()->ControllerCommand) { g_Plugins->Control()->ControllerCommand(Control, Command); } break;
+			case PLUGIN_SNAPSTATION: g_SnapStation->WriteTo(Control, (uint16_t) address, data); break;
             }
 
             if (Controllers[Control].Plugin != PLUGIN_RAW)
